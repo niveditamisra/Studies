@@ -1,0 +1,14 @@
+1. Interpreter vs compiler example: 
+
+let userInput1 = prompt('Enter name: ');
+let userInput2 = prompt('Enter comparison string: ');
+//if (userInput1.substring(0,2) == 'Nivedita'.substring(0,2));(condition is true)
+if (userInput.substring(0,2) == userInput2.substring(0,2))
+{
+	//alert(userInput.substring(0,2));
+	alert('Name matches');
+}
+else 
+{
+	alert('No match');
+}

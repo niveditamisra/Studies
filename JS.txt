@@ -1,0 +1,139 @@
+
+JAVASCRIPT:
+
+
+Javascript ES6:-
+
+ECMAScript 2015 was the second major revision to JavaScript.
+
+ECMAScript 2015 is also known as ES6 and ECMAScript 6.
+
+Javascript engine:-
+A JavaScript engine is simply a computer program that executes JavaScript code. It's responsible for translating human-readable JavaScript code into machine-readable instructions that the computer's hardware can execute.
+
+When you write JavaScript code and run it in a browser, the code doesn't directly interact with your computer's hardware. Instead, it interacts with the JavaScript engine, which acts as an intermediary between your code and the underlying machine.
+
+Every browser has its own JS engine, but the most well known one is Google's v8 Engine. This v8 Engine powers Google Chrome and also Node.js (used to build server side applications).
+
+What is a JavaScript Runtime?
+A JavaScript (JS) runtime is a comprehensive environment that enables the execution of JavaScript code. It consists of various components working together to facilitate the execution of JavaScript applications. When we refer to a JS runtime, we're typically talking about the entire ecosystem that extends beyond the basic execution of code.
+
+Depending on where JavaScript is running (the web browser or server-side with Node.js), there might be additional environment-specific features in the runtime. For instance, in a browser, there could be features related to handling browser events, accessing the DOM, and interacting with browser-specific functionalities.
+
+To review, a JavaScript engine is a program designed to execute JavaScript code. It utilizes the call stack and execution context, with all necessary data stored in the heap.
+
+When examining the JavaScript runtime in a browser, it consists of the JS Engine, WEB APIs, callback queue, and an event loop. The event loop plays a crucial role in transferring callback functions from the queue to the call stack, ensuring the seamless execution of JavaScript applications.
+
+
+
+Compilation vs Interpretation
+In compilation, the entire code is converted into machine code at once and written in a binary file that can be executed by a computer.
+
+In compilation:
+Source code gets compiled to machine code and then gets executed while running the program.
+
+In interpretation, the interpreter runs through the source code and executes it line by line.
+The code still needs to get converted into machine code, but this time it is happening line by line while executing the program.
+
+In interpretation:
+Source code gets converted into machine code and gets executed at the same time line by line.
+
+JS used to be a purely interpreted language. But the modern JS engine now use a mix of compilation and interpretation which is known as "just-in-time" compilation
+
+In JIT compilation, the entire code is converted into machine code at once and then executed immediately.
+
+The difference between the compilation and JIT. Well, there's one major difference: after compilation, the machine code is stored in a portable file. It can be executed at any time – there's no need to rush immediately after the compilation process.
+
+But in the case of JIT, the machine code needs to execute as soon as the compilation ends.
+
+
+
+
+# JS runs in the browser on the loaded page.You can manipulate the HTML structure(DOM) of the page.No request to the server required no need to wait for new HTML page as a response.
+
+
+
+Javascript is a high-level,object-oriented,multi-paradigm programming language.JavaScript is primarily a client-side language. JavaScript started at Netscape, a web browser developed in the 1990s. A webpage can contain embedded JavaScript, which executes when a user visits the page. The language was created to allow web developers to embed executable code on their webpages so that they could make their web pages interactive, or perform simple tasks. Today, browser scripting remains the main use case of JavaScript.
+ The most significant difference between JAVA and JS is that Java is a compiled language, and JavaScript is an interpreted language. JavaScript runs on many browsers out of the box, whereas Java applets require an additional plug-in. Both languages have different runtime environments, different governing bodies, and different libraries.
+
+1): High Level: In Languages such as JS and python ,everything happens automatically while in low-level languages such as c , the developer has to manage the resources manually.
+
+2): GARBAGE COLLECTED: Some high-level languages, such as JavaScript, utilize a form of automatic memory management known as garbage collection (GC). The purpose of a garbage collector is to monitor memory allocation and determine when a block of allocated memory is no longer needed and reclaim it. Cleaning the memory so that we don't have to do it manually in our code.
+
+3)INTERPRETED OR JUST_IN_TIME COMPILED:  A program such as C++ or Java needs to be compiled before it is run. The source code is passed through a program called a compiler, which translates it into bytecode that the machine understands and can execute. In contrast, JavaScript has no compilation step. Instead, an interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. More modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
+
+4): MULTIPARADIGM: A paradigm can be defined as an approach to solving a problem. A programming paradigm is a way to solve problems by using a programming language. A programming language that offers multiple programming paradigms is referred to as a multi-paradigm programming language. Some of the well-known paradigms are mentioned below:--
+
+a)Procedural programming OR Imperative Programming Paradigm: -- This is an approach where solutions are designed as sets of a clearly defined sequence of instructions or procedures.
+
+A programming language with this approach will have code with a series of commands specifying what the computer has to do, how it has to do it, and when it has to do it to arrive at the solution.
+
+b): Object-Oriented Programming Paradigm:--
+This is an approach where the solution is designed around communication between the Objects or Classes, which hold the data and the methods to act upon that data.
+
+A programming language with this approach will have code with a series of operations involving defining classes and interaction among these classes with the help of associated methods.
+
+c): 
+Functional Programming Paradigm:---
+This is a declarative approach where the solution is designed around applying and composing functions.
+
+A programming language with this approach will have a series of function calls and function compositions, where each function takes an input state and returns a consistent output value independent of the program state.
+
+5): Prototype-based object oriented:-Prototype-based object-oriented programming is a style of object-oriented programming in which classes are not explicitly defined, but rather derived by adding properties and methods to an instance of another class or, less frequently, adding them to an empty object.
+
+In simple words: this type of style allows the creation of an object without first defining its class.
+
+OOP(Object-oriented programming):-
+1)OOP is the programming that is based on the concept of  Objects.
+2)Objects contain the methods and properties.
+3) In OOP, objects are the self-contained pieces or blocks of code.
+
+Prototype:-
+Prototype contains methods and properties that are accessible to all objects.
+
+
+Constructor functions:_
+
+## It is a technique to create objects from the function.
+
+Classes and Instances:_
+
+1)Classes are like blueprints from which we can create new Objects:-
+
+a)Classes are Not Hoisted which means we can use them after declaration.
+b)Classes are first-class citizens which means we can pass them into functions and also return them from functions.
+c)Classes are executed in strict mode which means if we didn't activate it for our entire script all the code that is in the class will be executed in strict mode.
+
+
+2)Instances are the objects that have been created from the constructor function. The constructor serves as the blueprint and each object created from it is an Instance.
+
+
+
+MDN:
+Telephone number for mobile devices.
+
+Temperature altitude:
+Difference between highest and lowest temperature.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

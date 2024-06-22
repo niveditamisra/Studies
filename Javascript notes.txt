@@ -1,0 +1,438 @@
+# Javascript fundamentals
+
+VALUE'S AND VARIABLES:-
+
+Javascript is a case-sensitive programming language.
+E.g firstName-camelCase notation.
+first_name-this is another way of writing code.
+
+
+#What is a variable?
+It is a data container where you store a value in a variable.
+
+
+
+ What is value?
+
+- A value is basically a piece of data.
+For e.g: console. log('Nishi')..here Nishi is a value.
+console. log('23')...here 23 is a value.
+- We can store them in the variables and we can reuse them over and over again.
+-Every value is either an object or a primitive value.
+
+
+
+
+# What is the scope of the variable?
+
+In simple terms, the scope of a variable is its lifetime in the program. This means that the scope of a variable is the block of code in the entire program where the variable is declared, used, and can be modified.
+
+#In JS variables contain only numbers, letters underscores, or the dollar sign.
+
+DECLARE VARIABLES:
+let: By using let we can reassign a value to a variable.
+const: value in const variable cannot be changed.
+var: It is the old way of defining variables, used in older times.
+
+Why use Variables?:
+1)Reusability
+2)Readability:-Organize your code over several lines rather than cramming everything into a single line.
+
+
+
+
+
+
+JavaScript Variable Scope:-
+The scope of a variable is the region of your program in which it is defined. JavaScript variables have only two scopes.
+
+Global Variables − A global variable has global scope which means it can be defined anywhere in your JavaScript code.
+
+Local Variables − A local variable will be visible only within a function where it is defined. Function parameters are always local to that function.
+
+Within the body of a function, a local variable takes precedence over a global variable with the same name. If you declare a local variable or function parameter with the same name as a global variable, you effectively hide the global variable. Take a look into the following example.
+
+
+<html>
+   <body onload = checkscope();>   
+      <script type = "text/javascript">
+         <!--
+            var myVar = "global";      // Declare a global variable
+            function checkscope( ) {
+               var myVar = "local";    // Declare a local variable
+               document.write(myVar);
+            }
+         //-->
+      </script>     
+   </body>
+</html>
+
+
+#Only primitive values are immutable(that can be changed) but array is not a primitive value.
+
+
+
+
+# What is console.log?
+
+-  Whenever we need to output something from a code to the browser,we use console.log.
+- We can log different values at the same time in one console.log.
+- We always use console.log because we want to see the results of our experiment in the developer console in the browser.
+
+#console.warn():- To generate warning in the console.
+#console.error():- To generate  errors in the console.
+#console.table():-Another way to show objects in the console.It gives us nicely formatted table.
+
+
+
+# There are two types of comments in JS- 
+-Single line comment:-//
+-Multiline comment:/*.......*/
+
+
+DATA TYPES:-
+
+#There are 7 primitive Data types in JS:-
+1)Numbers: Used for decimals and integers e.g let age = 23;
+2)Boolean: Used for taking decisions (T or F).
+3)String: Used for text.
+4)Undefined: Value taken by a variable not yet defined e.g let children;
+5)Null: means empty value.
+6)BigInt: Larger integers than the number type can hold.
+7):Symbol:
+
+
+# When the + operator is used with 2 numbers JS adds those numbers.
+# When the + operator is used with 2 strings JS concatenates those 2 strings.
+# When the + operator is used with a number and a string JS converts the numeric value to a string and performs concatenation.
+# If you use a minus operator, a numeric value is not converted to a string.
+
+#JS Datatypes are converted automatically as needed during script execution.
+
+
+
+TYPE CONVERSION:
+
+#To convert string to a number we use for e.g :
+let inputYear = '1991';
+console.log(Number(inputYear));
+then the string will convert to a number.
+
+#To convert number to a string we use for e.g :
+console.log(String(1991));
+
+#JS can convert to a number, to a string, to a boolean but not something undefined or to null.
+
+
+
+TYPE COERCION:
+In JS type coercion will automatically convert a number to a string.
+e.g: console.log('I m'+23+'years old');
+
+
+
+
+# BOOLEAN LOGIC is a branch of computer science that uses true and false values to solve complex logical problems. To do that it uses several logical operators to combine true and false values, which are AND, OR, and NOT operators.
+
+# && (AND), || (OR) , !(NOT).
+
+#In JS there is a special operator called type that we can use to show the type of value.
+
+#Dynamic typing simply means that we can easily change the type of a value that is held by a variable. For e.g:-
+let year=1991;
+console.log(year);
+
+year = 1992;
+console.log(year);
+
+
+Conventions of JS:
+# In JS there are some reserved keywords that would not work while creating variables for e.g. new, function etc.(We will learn more later)
+
+#We should not start a variable name with an uppercase letter.
+#If it's a constant then write it in uppercase only. 
+
+
+OPERATORS IN JS:-
+
+#MATH OPERATOR: An arithmetic operator takes numerical values (either literals or variables) as their operands(when you add two numbers, the numbers are the operand, and "+" is the operator ) and returns a single numerical value. The standard arithmetic operators are addition (+), subtraction (-), multiplication (*), and division (/). These operators work as they do in most other programming languages when used with floating point numbers (in particular, note that division by zero produces Infinity).
++,-,*,/,=
+ For example:1 / 2; // 0.5
+1 / 2 === 1.0 / 2.0; // this is true.
+
+ASSIGNMENT OPERATORS:-The addition assignment (+=) operator adds the value of the right operand to a variable and assigns the result to the variable. The types of the two operands determine the behavior of the addition assignment operator. Addition or concatenation is possible.
++= , ++ ,-- ,*= , 
+For e.g: let a = 2;
+let b = 'hello';
+
+console.log(a += 3); // Addition
+// Expected output: 5
+
+console.log(b += ' world'); // Concatenation
+// Expected output: "Hello world"
+
+
+
+
+COMPARISON OPERATORS:-The comparison operator compares its operands and returns a logical value based on whether the comparison is true. The operands can be numerical, string, logical, or object values.
+< ,> ,<= ,>= .
+ 
+
+OPERATOR'S PRECEDENCE:-
+# It determines the order in which operators are evaluated.
+
+# === is called a strict equality operator because it doesn't perform type coercion, so it only returns  only if both the values are the same.
+
+# == is called a loose equality operator which does type coercion.
+
+# !== is called a different operator.
+
+
+STRING'S
+
+#To write a template literal we use backticks `` to make a template string,(single and double quotes won't work to create a template string).
+
+# /n/ denotes a new line.
+
+
+IF_ELSE STATEMENT:
+
+
+
+# if(age>=18){
+console.log(....) 
+} else{
+console.log()
+}.
+This structure of the if-else statement is called a 'Control structure' because this structure allows us to have more control over the way that our code is executed.
+
+
+TRUTHY & FALSY VALUES:
+
+#In JS there are 5 false values:- 0,'', undefined, null, NaN, and False, so all of these values will be converted to false when we attempt to convert them to boolean. They are not false initially but they will become when converted to boolean.
+
+# Any string that is not an empty string, and an empty object, is a truthy value.
+
+
+ Difference between expressions and statements:-
+# Expressions (e.g.: 3+4 or true&&false or 1991 etc..) produce a value.
+
+# Statements are just like full sentences.
+
+TERNARY OPERATOR:
+The conditional (ternary) operator is the only JavaScript operator that takes three operands: a condition followed by a question mark (?), then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy. This operator is frequently used as an alternative to an if...else statement.
+# Conditional operator is also called ternary operator because it has 3 parts, the condition if part, and then else part. It allows us to write a code similar to an if/else statement but all in one line. It is an expression.
+
+STRICT MODE IN JS:
+
+#It makes us easier for us to write a secure JS code.
+
+
+FUNCTIONS
+
+#The fundamental building block of real-world JS applications is functions. The function is simply a piece of code that we can reuse over and over again in our code. A function can hold one or more complete lines of code. There are many ways to write functions.
+
+#There are 3 types of functions: Function declarations, Function expressions, Arrow functions.
+
+# E:G: logger(), so the process of basically using the function is called invoking, running, or calling the function.
+
+# When we write functions we also pass data into the functions and a function can also return data as well which means it gives us data back that we can then use for something else in the program.
+
+# So a function cannot only reuse a piece of code but can also receive data and return data back.
+
+# Not all functions need to return something and not all functions need to accept parameters.
+
+PARAMETERS:
+They are placeholders to receive input values, like local variables of a function.
+
+FUNCTION BODY:
+Processes the function's input data.
+
+RETURN:
+Return statement to output a value from the function and terminates execution.
+
+ARGUMENTS:
+Actual value of function parameters, to input data.
+
+
+E:G :(Function declarations) :-
+
+-function fruitProcessor(apples, oranges); here apples and oranges are parameters(like variables) , these two will get defined once the function gets called and they represent the input data of this function,
+
+console.log(apples,oranges);
+let juice = `Juice with ${apples} apples and ${oranges} oranges`; so here we build a string using the input data that we get into the function.
+
+return juice; here we can return any value from the function and this value can be used anywhere in the code.
+
+fruitProcessor (5,0); these are the inputs of the fruitProcessor function and these values here (5,0)of parameters are called arguments.
+
+if we want to use that value that was returned we need to store it in a variable so,
+let appleJuice `= fruitProcessor(5,0);
+console.log(appleJuice);
+ here we use these values(5,0)to build the juice string here and then we return that value from the function then we need to save that value somewhere by saving it into appleJuice variable and then we can log that value to the console or we can directly log this value into the console like- console.log(fruitProcessor(5,0)); 
+
+# Functions allow us to write more maintainable code because with functions we can create reusable chunks of code instead of having to manually write the same code over and over again.
+
+FUNCTION EXPRESSION:- 
+
+A function basically without a name is also called an anonymous function.
+e.g:- let calcAge = function(birthyear){
+return 2023-birthyear
+}
+
+let age= calcAge(1985);
+console.log(age);
+
+Difference betweeen function declaration and function expression:-
+# we can call the function before they are defined in the code in function declaration.
+# we cant do that in function expression .
+Its because of the process called hoisting.
+
+
+ARROW FUNCTION:-
+
+It is simply a special form of function expression that is shorter and therefore faster to write.
+
+
+
+ARRAY:
+ -Array is not a primitive value so we can actually change it and mutate it.So we can mutate arrays even though they were declared with const.
+- We use arrays as a data structure to basically store multiple related values in the same variable.
+
+METHOD'S:
+
+The JavaScript method is an object property that has a function value.JavaScript methods are actions that can be performed on objects. A Javascript method is an action done on an object, and it is a property that holds a function definition, for example, suppose you have a function that has firstName, lastName,  and a method with the name of fullName that returns the first name and the last name of a person i-e the full name of a person. The fullName is the property and the function is the value.
+For e.g ADD ELEMENTS--
+-'Push' is a method that technically is a function.
+-unshift.
+
+REMOVE ELEMENTS--
+- pop
+- shift
+
+OBJECTS:
+# Another data structure in JS are objects.There are multiple ways of creating objects,using the curly braces is the easiest way of creating object which is called the object literal syntax.
+
+DOT VS BRACKET NOTATION:
+For e.g: console.log(jonas.lastName);  In dot notation we use real property name.
+-console.log(jonas["lastName"]);   In bracket notation we use computed property name with first and last Name like this here.
+-let nameKey='Name'
+console.log(jonas['first'+nameKey]);
+
+
+PROMPT :
+
+Prompt is a built in function,which creates a pop-up window with an input field.
+
+#Prompt function always return a string value.
+
+OBJECT METHOD:
+Any function that is attached to an object is called a method.
+for e.g : let nishi = {
+  firstName: 'Nishi',
+  lastName: 'misra',
+  age: 2023 - 1985,
+  job: 'Homemaker',
+  hobby: 'Dance',
+
+calcAge : function (birthYear) {
+  return 2023 - birthYear;
+}
+}
+So here a method is also a property that holds a function value.
+
+# This variable is basically equal to the object on which the method is called.OR object calling the method.
+
+THIS:
+This keyword refers to an object that is executing the current piece of code. It references the object that is executing the current function. 
+
+
+LOOP'S:
+ 
+Loop's allow us to automate repetitive tasks,the tasks that have to perform over and over again.
+
+# There are different typrs of loop: 1) FOR loop
+2) WHILE loop.
+
+
+
+MATH.RANDOM :-
+The Math.random() method returns a random number from 0 (inclusive) up to but not including 1 (exclusive).
+For e.g: let x = Math.random();
+
+
+
+
+NODE:JS:
+
+NodeJs is a way of running JS outside of the browser.It's also a way of running development tools just like the live server.
+
+
+
+Math.max():-
+The Math.max() static method returns the largest of the numbers given as input parameters, or -Infinity if there are no parameters.
+
+
+Sensor error:-
+ANSWER: Sensor error is the is the deviation of the measured value from the actual value of the property being measured. When measuring atmospheric air temperature, it is the sensor reading minus the actual air temperature
+
+
+The hard part is determining the actual air temperature so that one can calculate the sensor error. All sensors produce measurement error, even the ones used to determine the reference temperature. 
+
+TEMPERATURE AMPLITUDE:
+The temperature amplitude is the difference between the minimum and maximum temperature that occurred within a specific recording time period
+
+
+
+## A software bug is an error, flaw or fault in the design, development, or operation of computer software that causes it to produce an incorrect or unexpected result, or to behave in unintended ways.
+
+##Debugging is the process of finding,fixing and preventing bugs.
+
+DEVELOPER CONSOLE:-
+#Developer tools allow us to see errors, run commands, examine variables, and much more.
+They can be opened with F12 for most browsers on Windows. 
+
+
+BREAKPOINTS IN VS CODE:-
+ Data breakpoints break execution when a value stored at a specified memory address changes. If the value is read but not changed, execution doesn't break. 
+
+
+ECMA AND JS:-
+JavaScript is a general-purpose scripting language that conforms to the ECMAScript specification. The ECMAScript specification is a blueprint for creating a scripting language. JavaScript is an implementation of that blueprint. On the whole, JavaScript implements the ECMAScript specification as described in ECMA-262.
+
+
+
+EVAL FUNCTION:-
+The eval() function in JavaScript is used to evaluate the expression. It is JavaScirpt's global function, which evaluates the specified string as JavaScript code and executes it. The parameter of the eval() function is a string. If the parameter represents the statements, eval() evaluates the statements.
+
+
+
+Substr and Substring:-
+Both functions extracts a substring starting from an index.
+
+The difference between substr and substring is that substr extracts the substring based on its length, whereas substring extracts the substring based on its start and end indexes.
+
+Example:
+
+const test = 'Lorem ipsum dolor sit amet';
+console.log('substr:', test.substr(6, 10));
+console.log('substring:', test.substring(6, 10));
+Outputs:
+
+substr:ipsum dolo
+substring:ipsu
+
+
+## substr(start)
+substr(start, length)
+
+Parameters-
+start:
+The index of the first character to include in the returned substring.
+
+length ( Optional)
+The number of characters to extract.
+
+
+
+
